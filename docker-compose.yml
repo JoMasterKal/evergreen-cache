@@ -29,5 +29,7 @@ services:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: root
+    ports:
+    - 3306:3306
     volumes:
       - ./docker:/docker-entrypoint-initdb.d
